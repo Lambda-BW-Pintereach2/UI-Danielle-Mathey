@@ -8,33 +8,42 @@
 
     <link href="css/index.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet"> <!--google font-->
+
   </head>
+
   <body>
   <!--navigation-->
-    <div class="navbar">
-      <h1>Pintereach</h1>
+  <header>
+    <section class="navbar">
+      <div>
+         <h1>Pintereach</h1>
+      </div>
+      <div>
         <nav>
           <a href="about.html">About</a>
           <a href="#">Sign Up</a>
           <a href="#">Log In</a>
         </nav>
-    </div>
+      </div>
+    </section>
+  </header>
+    
+      <div class="container home">
 
-    <div class="container home">
-
-        <header class="intro">
-          <div class= "top-text">
-            <h2>Welcome to Pintereach!</h2>
+        
+          <section class= "top-section">
+            <h2>Welcome to <span>Pintereach!</span></h2>
             <p>Ever find yourself lost in a sea of articles, wishing you had a one stop shop to keep them all? Pintereach is the app for you! We've taken the hassel and stress from struggling to organize your favorite articles into one easy to manage place! Gone are the multiple bookmarks or folders cluttering up your workspace.</p>
-          </div>
-        </header>
+          </section>
+        
       
         <section class="left-side">
           <div class="img-left">
             <img src="imgs\pinboard.jpg">
           </div>
           <div class="left-text">
-            <p>Add, Remove and Organize Articles</p>
+            <p><span class="add">Add, </span><span class="remove">Remove</span> and <span class="organize">Organize</span> Articles</p>
           </div>
         </section>
 
@@ -43,7 +52,7 @@
             <img src="imgs\online-article.jpg">
           </div>
           <div class="middle-text">
-            <p>Don't Let Reasearch Get You Down. Read it. Pin it. Organize it with Pintereach</p>
+            <p>Don't Let Reasearch Get You Down. <span class="read">Read it.</span> <span class="pin">Pin it.</span> <span class="organize">Organize it</span> with Pintereach</p>
           </div>
         </section>
 
@@ -52,20 +61,18 @@
             <img src="imgs\devices.jpg">
           </div>
           <div class="right-text">
-            <p>Ready to Go, Wherever You Are</p>
+            <p><span class="ready">Ready</span> to <span class="go">Go,</span> Wherever <span class="you">You</span> Are</p>
           </div>
         </section> 
         
         <div class="btn">
           <button>Sign Up</button>
         </div>
-
+        <br>
     </div><!--container-->
-
-     
-
+    
       <footer class="footer">
-        <p>&copy; Lambda Students 2020</p>
+        <p>&copy; Pintereach Lambda Students 2020</p>
       </footer>
 
   </body>

@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.navbar {
+  display: flex;
+  padding: 2% 0;
+  border-bottom: 2px solid white;
+  background-color: #C0C0C0;
+}
+@media (min-width: 375px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+.navbar div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+@media (min-width: 375px) {
+  .navbar div {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  font-family: 'Raleway';
+  font-size: 2rem;
+  background-color: #C0C0C0;
+}
+@media (min-width: 375px) {
+  .navbar nav {
+    font-size: 1rem;
+  }
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar h1 {
+  margin-left: 5%;
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 2%;
+}
+.home {
+  background-color: #000000;
+}
+.home .top-section {
+  border-bottom: 2px dashed white;
+}
+.home .top-section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2rem;
+}
+.home .top-section h2 span {
+  color: #ff0000;
+}
+.home .top-section p {
+  color: white;
+  font-family: 'Raleway';
+  margin-left: 5%;
+}
+.home .left-side {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 375px) {
+  .home .left-side {
+    flex-direction: column;
+  }
+}
+.home .left-side .img-left {
+  border-radius: 10px;
+}
+@media (min-width: 375px) {
+  .home .left-side .img-left {
+    justify-content: center;
+    margin-left: 25%;
+  }
+}
+.home .left-side p {
+  color: white;
+  font-family: 'Raleway';
+}
+@media (min-width: 375px) {
+  .home .left-side p {
+    margin-left: 20%;
+  }
+}
+.home .left-side p .remove {
+  font-weight: bold;
+}
+.home .left-side p .add {
+  color: #ff0000;
+  font-weight: bold;
+}
+.home .left-side p .organize {
+  color: #ff4d00;
+  font-weight: bold;
+}
+.home .middle {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 375px) {
+  .home .middle {
+    flex-direction: column;
+  }
+}
+.home .middle .img-middle {
+  border-radius: 10px;
+}
+@media (min-width: 375px) {
+  .home .middle .img-middle {
+    justify-content: center;
+    margin-left: 25%;
+  }
+}
+.home .middle p {
+  color: white;
+  font-family: 'Raleway';
+}
+@media (min-width: 375px) {
+  .home .middle p {
+    margin-left: 12%;
+  }
+}
+.home .middle p .read {
+  font-weight: bold;
+}
+.home .middle p .pin {
+  color: #ff0000;
+  font-weight: bold;
+}
+.home .middle p .organize {
+  color: #ff4d00;
+  font-weight: bold;
+}
+.home .right-side {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 375px) {
+  .home .right-side {
+    flex-direction: column;
+  }
+}
+.home .right-side .img-right {
+  border-radius: 10px;
+}
+@media (min-width: 375px) {
+  .home .right-side .img-right {
+    justify-content: center;
+    margin-left: 25%;
+  }
+}
+.home .right-side p {
+  color: white;
+  font-family: 'Raleway';
+}
+@media (min-width: 375px) {
+  .home .right-side p {
+    margin-left: 20%;
+  }
+}
+.home .right-side p .ready {
+  color: #ff4d00;
+  font-weight: bold;
+}
+.home .right-side p .go {
+  font-weight: bolder;
+}
+.home .right-side p .you {
+  color: #ff0000;
+  font-weight: bold;
+}
+.home button {
+  display: flex;
+  background-color: #ff4d00;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-left: 35%;
+  margin-bottom: 10%;
+}
+.footer p {
+  margin-left: 20%;
+  font-family: 'Raleway';
+}
