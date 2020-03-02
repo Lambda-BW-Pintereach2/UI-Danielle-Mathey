@@ -1,0 +1,122 @@
+.container {
+
+  background-color: @bodycolor;
+    
+  header {
+    line-height: 2;
+    background-color: @navcolor;
+
+          nav {
+            .flex(flex, space-evenly, center);
+            line-height: 5;
+            width: 80%;
+            font-family: 'Raleway';
+            font-size: 2rem;
+            background-color: @navcolor;
+            padding-left: 10%;
+              @media @mobile {
+                font-size: 1rem;
+              }
+          }
+    
+            a {
+              font-weight: 700;
+              font-size: 1.5rem;
+              text-decoration: none;
+              color: white;
+            }
+    
+
+            h2 {
+              align-self: center;
+              font-weight: 800;
+              font-size: 3rem;
+              text-align: center;
+              letter-spacing: 5px;
+              background-color: @navcolor;
+              color: white;
+            }
+
+            
+        }
+
+.profiles {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15%;
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+      @media @mobile {
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 3%;
+      }
+  
+      a {
+        color: @btncolor;
+        text-decoration: none;
+        margin-top: 2%;
+        margin-bottom: 3%;
+      }
+
+      i {
+        margin-top: 3%;
+        text-align: center;
+        font-size: 2.5rem;
+        color: @btncolor;
+      }
+
+      p {
+        color: white;
+        line-height: 2;
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: 'Raleway';
+        margin: 2%;
+      }
+
+      h3 {
+        font-family: 'Raleway';
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: white;
+
+          .carlos {
+            color: @boldcolor;
+          }
+
+          .kaylen {
+            color: @boldcolor;
+          }
+
+          .shafi {
+            color: @boldcolor;
+          }
+
+          .danielle {
+            color: @boldcolor;
+          }
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 2%;
+      }
+  }
+}
+
+} //container

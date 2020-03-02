@@ -165,6 +165,7 @@ table {
 .navbar a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
 }
 .navbar h1 {
   margin-left: 5%;
@@ -176,23 +177,25 @@ table {
   background-color: #000000;
 }
 .home .top-section {
-  border-bottom: 2px dashed white;
+  border-bottom: 2px solid white;
 }
-.home .top-section h2 {
+.home .top-section h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: 'Raleway';
   font-size: 2rem;
+  line-height: 4;
 }
-.home .top-section h2 span {
+.home .top-section h1 span {
   color: #ff0000;
 }
 .home .top-section p {
   color: white;
   font-family: 'Raleway';
   margin-left: 5%;
+  font-size: 1.2rem;
 }
 .home .left-side {
   margin: 2rem 0;
@@ -315,15 +318,122 @@ table {
   font-weight: bold;
 }
 .home button {
-  display: flex;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
   background-color: #ff4d00;
   color: white;
-  text-align: center;
+  font-size: 1.5rem;
+  align-self: center;
+  margin-left: 30%;
+}
+.container {
+  background-color: #000000;
+}
+.container header {
+  line-height: 2;
+  background-color: #C0C0C0;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 5;
+  width: 80%;
+  font-family: 'Raleway';
+  font-size: 2rem;
+  background-color: #C0C0C0;
+  padding-left: 10%;
+}
+@media (min-width: 375px) {
+  .container header nav {
+    font-size: 1rem;
+  }
+}
+.container header a {
+  font-weight: 700;
+  font-size: 1.5rem;
   text-decoration: none;
+  color: white;
+}
+.container header h2 {
+  align-self: center;
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #C0C0C0;
+  color: white;
+}
+.container .profiles {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15%;
+}
+.container .profiles .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+@media (min-width: 375px) {
+  .container .profiles .profile {
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 3%;
+  }
+}
+.container .profiles .profile a {
+  color: #ff4d00;
+  text-decoration: none;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.container .profiles .profile i {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff4d00;
+}
+.container .profiles .profile p {
+  color: white;
+  line-height: 2;
+  font-weight: 400;
   font-size: 1rem;
-  border-radius: 20px;
-  margin-left: 35%;
-  margin-bottom: 10%;
+  font-family: 'Raleway';
+  margin: 2%;
+}
+.container .profiles .profile h3 {
+  font-family: 'Raleway';
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+}
+.container .profiles .profile h3 .carlos {
+  color: #ff0000;
+}
+.container .profiles .profile h3 .kaylen {
+  color: #ff0000;
+}
+.container .profiles .profile h3 .shafi {
+  color: #ff0000;
+}
+.container .profiles .profile h3 .danielle {
+  color: #ff0000;
+}
+.container .profiles .profile img {
+  width: 100%;
+  margin-bottom: 2%;
 }
 .footer p {
   margin-left: 20%;
