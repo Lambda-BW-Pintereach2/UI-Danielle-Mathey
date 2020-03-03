@@ -18,124 +18,137 @@
         p {
           color: white;
           font-family: 'Raleway';
-          margin-left: 5%;
           font-size: 1.2rem;
     }
   }
-  .left-side {
-    margin: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-      @media @mobile {
-        flex-direction: column;
-      }
 
-      .img-left {
-        border-radius: 10px;
+  .main {
+    .top-row {
+      .flex(flex, space-between, center);
+      flex-direction: row;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 5%;
         @media @mobile {
-          justify-content: center;
-          margin-left: 25%;
+          flex-direction: column;
         }
-      }
-      
-        p {
-          color: white;
-          font-family: 'Raleway';
-            @media @mobile {
-              margin-left: 20%;
-            }
+  
+        img {
+          width: 25%;
+          }
+        
+        
+          .top-text {
+            width: 45%;
+              p {
 
-            .remove {
+            color: white;
+            font-family: 'Raleway';
+          
+              .remove {
+                font-weight: bold;
+              }
+  
+              .add {
+                color: @boldcolor;
+                font-weight: bold;
+              }
+  
+              .organize {
+                color: @btncolor;
+                font-weight: bold;
+              }
+            }
+          }
+    }
+          
+    
+  
+    .middle-row {
+      .flex(flex, space-evenly, center);
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 5%;
+        @media @mobile {
+          flex-direction: column;
+        }
+        div {
+          width: 30%;
+          img {
+         width: 100%;
+          }
+        }
+        
+        
+  
+          .middle-text {
+            width: 45%;
+            p {
+            color: white;
+            font-family: 'Raleway';
+            @media @mobile {
+              flex-direction: column;
+            }
+            .read {
               font-weight: bold;
             }
-
-            .add {
+            .pin {
               color: @boldcolor;
               font-weight: bold;
             }
-
             .organize {
               color: @btncolor;
               font-weight: bold;
             }
-          }
+          } 
         }
-  
-
-  .middle {
-    margin: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-      @media @mobile {
-        flex-direction: column;
-      }
-
-      .img-middle {
-        border-radius: 10px;
-        @media @mobile {
-          justify-content: center;
-          margin-left: 25%;
-        }
-      }
-
-        p {
-          color: white;
-          font-family: 'Raleway';
-          @media @mobile {
-            margin-left: 12%;
-          }
-          .read {
-            font-weight: bold;
-          }
-          .pin {
-            color: @boldcolor;
-            font-weight: bold;
-          }
-          .organize {
-            color: @btncolor;
-            font-weight: bold;
-          }
-
-        }
-  }
-
-  .right-side {
-    margin: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-      @media @mobile {
-        flex-direction: column;
-  }
-    .img-right {
-      border-radius: 10px;
-      @media @mobile {
-        justify-content: center;
-        margin-left: 25%;
-      }
     }
-    p {
-      color: white;
-          font-family: 'Raleway';
-          @media @mobile {
-            margin-left: 20%;
-          }
-          .ready {
-            color: @btncolor;
-            font-weight: bold;
-          }
-          .go {
-            font-weight: bolder;
-          }
-          .you {
-            color: @boldcolor;
-            font-weight: bold;
-          }
-    }  
+    
+  
+    .bottom-row {
+      .flex(flex, space-between, center);
+      flex-direction: row;
+      height: 10%;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 5%;
+        @media @mobile {
+          flex-direction: column;
+    }
+      img {
+        width: 25%;
+        }
+      
+  
+      .bottom-text {
+        width: 40%;
+        p {
+            margin: 0 auto;
+            align-self: center;
+            color: white;
+            font-family: 'Raleway';
+            @media @mobile {
+              flex-direction: column;
+            }
+            .ready {
+              color: @btncolor;
+              font-weight: bold;
+            }
+            .go {
+              font-weight: bolder;
+            }
+            .you {
+              color: @boldcolor;
+              font-weight: bold;
+            }
+          } 
+        }
+    } 
+  
   }
-
+  
   button {
       border-radius: 4px;
       text-align: center;
@@ -143,8 +156,8 @@
       background-color: @btncolor;
       color: white;
       font-size: 1.5rem;
-      align-self: center;
+      width: 30%;
       margin-left: 30%;
     }
 
-}//Home
+  }//Home
