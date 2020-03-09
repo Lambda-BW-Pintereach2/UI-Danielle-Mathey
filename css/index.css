@@ -369,7 +369,7 @@ table {
 .container .profiles {
   margin-top: 5%;
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 20%;
   justify-content: space-between;
   padding-left: 15%;
 }
@@ -384,10 +384,6 @@ table {
 }
 @media (max-width: 800px) {
   .container .profiles .profile {
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
     width: 80%;
     margin-bottom: 3%;
   }
@@ -403,6 +399,7 @@ table {
   text-align: center;
   font-size: 2.5rem;
   color: #ff4d00;
+  padding-right: 50%;
 }
 .container .profiles .profile p {
   color: white;
@@ -410,7 +407,8 @@ table {
   font-weight: 400;
   font-size: 1rem;
   font-family: 'Raleway';
-  margin: 2%;
+  align-self: center;
+  padding-right: 50%;
 }
 .container .profiles .profile h3 {
   font-family: 'Raleway';
@@ -419,22 +417,24 @@ table {
   font-weight: 700;
   font-size: 1.2rem;
   color: white;
+  padding-right: 50%;
 }
-.container .profiles .profile h3 .carlos {
+.container .profiles .profile .carlos {
   color: #ff0000;
 }
-.container .profiles .profile h3 .kaylen {
+.container .profiles .profile .kaylen {
   color: #ff0000;
 }
-.container .profiles .profile h3 .shafi {
+.container .profiles .profile .shafi {
   color: #ff0000;
 }
-.container .profiles .profile h3 .danielle {
+.container .profiles .profile .danielle {
   color: #ff0000;
 }
-.container .profiles .profile img {
+.container .profiles img {
   width: 100%;
   margin-bottom: 2%;
+  align-content: center;
 }
 .footer p {
   margin-left: 35%;
