@@ -1,7 +1,7 @@
 .container {
-
+  
   background-color: @bodycolor;
-    
+
   header {
     line-height: 2;
     background-color: @navcolor;
@@ -46,6 +46,9 @@
               margin-left: 20%;
               justify-content: space-between;
               padding-left: 15%;
+              @media @mobile {
+                margin-left: auto;
+              }
 
           .profile {
               display: flex;
@@ -56,7 +59,7 @@
               background-color: black;
               text-align: center;
                 @media @mobile {
-                width: 80%;
+                width: 60%;
                 margin-bottom: 3%;
                 }
   
@@ -73,6 +76,9 @@
         font-size: 2.5rem;
         color: @btncolor;
         padding-right: 50%;
+        @media @mobile {
+          margin-left: 80%;
+        }
       }
 
       p {
@@ -83,17 +89,23 @@
         font-family: 'Raleway';
         align-self: center;
         padding-right: 50%;
+        @media @mobile {
+          margin-left: 80%;
         }
+      }
 
       h3 {
         font-family: 'Raleway';
         margin-top: 2%;
         margin-bottom: 2%;
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: white;
         padding-right: 50%;
+        @media @mobile {
+          margin-left: 80%;
         }
+      }
 
           .carlos {
             color: @boldcolor;

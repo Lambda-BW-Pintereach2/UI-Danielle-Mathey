@@ -373,6 +373,11 @@ table {
   justify-content: space-between;
   padding-left: 15%;
 }
+@media (max-width: 800px) {
+  .container .profiles {
+    margin-left: auto;
+  }
+}
 .container .profiles .profile {
   display: flex;
   flex-direction: column;
@@ -384,7 +389,7 @@ table {
 }
 @media (max-width: 800px) {
   .container .profiles .profile {
-    width: 80%;
+    width: 60%;
     margin-bottom: 3%;
   }
 }
@@ -401,6 +406,11 @@ table {
   color: #ff4d00;
   padding-right: 50%;
 }
+@media (max-width: 800px) {
+  .container .profiles .profile i {
+    margin-left: 80%;
+  }
+}
 .container .profiles .profile p {
   color: white;
   line-height: 2;
@@ -410,14 +420,24 @@ table {
   align-self: center;
   padding-right: 50%;
 }
+@media (max-width: 800px) {
+  .container .profiles .profile p {
+    margin-left: 80%;
+  }
+}
 .container .profiles .profile h3 {
   font-family: 'Raleway';
   margin-top: 2%;
   margin-bottom: 2%;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   padding-right: 50%;
+}
+@media (max-width: 800px) {
+  .container .profiles .profile h3 {
+    margin-left: 80%;
+  }
 }
 .container .profiles .profile .carlos {
   color: #ff0000;
